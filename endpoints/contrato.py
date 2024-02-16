@@ -1,12 +1,8 @@
 from fastapi import APIRouter
-from starlette.responses import JSONResponse
-from fastapi.security import HTTPBearer, SecurityScopes
-from fastapi import Depends, HTTPException, status
-from fastapi.security.api_key import APIKeyHeader
+from fastapi import Depends
 from models.contrato import Contrato
 from auth.token import authenticate_token
 import base64
-from dotenv import load_dotenv
 import os
 
 
